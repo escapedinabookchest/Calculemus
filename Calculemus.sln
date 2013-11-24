@@ -5,6 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculemus", "Calculemus\Ca
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "CalculemusModeling", "CalculemusModeling\CalculemusModeling.modelproj", "{14E1234A-F739-4C08-8A28-B7A1EDE7DAAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCalculemus", "TestCalculemus\TestCalculemus.csproj", "{7C121A80-1B60-4469-81CF-4CF9A81149C7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B4A62AC6-C281-49BD-9B84-91D374D2140D} = {B4A62AC6-C281-49BD-9B84-91D374D2140D}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +24,10 @@ Global
 		{14E1234A-F739-4C08-8A28-B7A1EDE7DAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14E1234A-F739-4C08-8A28-B7A1EDE7DAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14E1234A-F739-4C08-8A28-B7A1EDE7DAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C121A80-1B60-4469-81CF-4CF9A81149C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C121A80-1B60-4469-81CF-4CF9A81149C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C121A80-1B60-4469-81CF-4CF9A81149C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C121A80-1B60-4469-81CF-4CF9A81149C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -192,16 +192,85 @@
                 value="false" />
             </defaultValue>
           </property>
+          <property
+            Id="1f8c15cb-a2a3-40e4-869c-6ae965dcafe3"
+            name="a"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="CalculemusModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d592288c-52a7-4121-b3fd-8a4e84d65f63"
+            name="b"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="CalculemusModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c98a1270-2c58-4c26-b073-6a23d7e8110b"
+            name="Attribute1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="CalculemusModeling.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="2ca7705c-3a89-48ad-bf93-69fc67f24198"
-            name="Clone"
+            Id="6180e6d7-2de4-49dc-b705-944b4a166693"
+            name="attachCircuit"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="26e55830-a6ef-46fb-ab78-28a7ee4889c5"
+                  name="circuit"
+                  direction="In">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="926ac2c0-57ae-41d2-964a-78e6510323db"
+                      LastKnownName="ICircuit"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -281,16 +350,66 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="bee889d8-2cb3-4105-bf2d-b26d2a27a48c"
-            isSubstitutable="false">
-            <classMoniker
-              Id="3b76beda-8a26-41f0-9a88-5443f9fe653d"
-              LastKnownName="Node"
+        <suppliersInternal>
+          <interfaceRealization
+            Id="cdd5fba5-a351-41c4-a17e-4fa23f49000f">
+            <interfaceMoniker
+              Id="926ac2c0-57ae-41d2-964a-78e6510323db"
+              LastKnownName="ICircuit"
               LastKnownLocation="CalculemusModeling.uml" />
-          </generalization>
-        </generalsInternal>
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1e836b91-1f81-4eb7-8b7c-2649afdd5a16"
+            name="process"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f73dda7c-1aac-4030-b22b-0a82bc923af0"
+                  name="a"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1cbb4254-94a7-4fe1-b855-9dfbe2580003"
+                  name="b"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b4518fd1-eeb0-4074-8c05-f2718cf7ded9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -300,16 +419,66 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="4d85cb54-1b84-4404-b663-5fdd1de1ab9b"
-            isSubstitutable="false">
-            <classMoniker
-              Id="3b76beda-8a26-41f0-9a88-5443f9fe653d"
-              LastKnownName="Node"
+        <suppliersInternal>
+          <interfaceRealization
+            Id="dc536050-9977-455d-8532-3f0ba3de4e2e">
+            <interfaceMoniker
+              Id="926ac2c0-57ae-41d2-964a-78e6510323db"
+              LastKnownName="ICircuit"
               LastKnownLocation="CalculemusModeling.uml" />
-          </generalization>
-        </generalsInternal>
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e968d565-1939-445e-ae05-f4f2660f5fdc"
+            name="process"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="81e5ff3f-2109-432b-9188-157ab7d972a2"
+                  name="a"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="351bf538-a2af-49ef-9279-c3de712d16c5"
+                  name="b"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7dcf0711-df6f-4fa0-a909-db6fed016325"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1022,6 +1191,106 @@
       <undefinedType
         Id="7d594a48-6855-4d6e-85c1-036e45e2bc1b"
         name="Bollean[][]" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="926ac2c0-57ae-41d2-964a-78e6510323db"
+        name="ICircuit"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4ff406ec-1c10-40c1-acdb-da1dc81139b0"
+            isDerived="false"
+            sourceEndRoleName="ICircuit"
+            targetEndRoleName="Node"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3b76beda-8a26-41f0-9a88-5443f9fe653d"
+              LastKnownName="Node"
+              LastKnownLocation="CalculemusModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="78322f9d-e8d6-40e0-8093-d609efd73157"
+                  name="ICircuit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d9229d6-1d8e-445d-9ce0-2e37299d81eb"
+                  name="Node"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperations>
+          <operation
+            Id="20b1ea18-6ca0-4701-87f5-eeda4335e02a"
+            name="process"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6e6e7b44-2825-4044-8cc3-685b022061f7"
+                  name="a"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="88c8c755-f12c-4fd5-a173-440a456b5c56"
+                  name="b"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08cd1424-4fe1-41a2-b3b4-8c424c0ff833"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
