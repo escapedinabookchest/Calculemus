@@ -16,6 +16,12 @@
         Id="532ea607-fb19-44b8-8502-3351b05452be"
         name="StandardProfileL3" />
     </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="a8082512-bd89-4074-b313-a9197b4bf579">
+      <profileInstance
+        Id="078cdff2-220b-4d9f-b2fd-622b33f28bb2"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
@@ -73,71 +79,7 @@
                 <parameter
                   Id="566a3e93-c77b-4805-a867-9bf82c8e0d31"
                   name="reader"
-                  direction="In">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="204c84f8-d4d5-47ac-94fd-0d94fac5ec87"
-                      LastKnownName="IReader"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperations>
-      </Interface>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <Interface
-        Id="204c84f8-d4d5-47ac-94fd-0d94fac5ec87"
-        name="IReader"
-        isAbstract="false"
-        isLeaf="false">
-        <ownedOperations>
-          <operation
-            Id="5b14bc8b-0a72-43fe-9e22-2c6b143beea4"
-            name="GetEdges"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="true"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="f41d0e78-eff0-4024-ab2c-018647b6672d"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="6762fc7e-cef1-4789-aba6-45f4a365b813"
-                      LastKnownName="Boolean[][]"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="f655fafb-5cb1-4f8a-b9e6-d6ff8644d964"
-            name="GetVertices"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="true"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="41d17cb6-42c0-4f45-9d32-60325e503c88"
-                  direction="Return">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="18833a67-0405-4176-a4dc-34897f6f70dd"
-                      LastKnownName="Dictionary&lt;String, String&gt;"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  direction="In" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -741,14 +683,7 @@
                 <parameter
                   Id="94e41a1b-1762-4864-bcf5-e4f1f4cb3b05"
                   name="reader"
-                  direction="In">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="204c84f8-d4d5-47ac-94fd-0d94fac5ec87"
-                      LastKnownName="IReader"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  direction="In" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -787,360 +722,6 @@
       <undefinedType
         Id="b979ba93-5a3c-4f79-ba4c-782f0b6c2de0"
         name="int" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="05c8b300-c38f-4092-becf-cef2fb65aaed"
-        name="InputReader"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="431ac94e-9e54-48cf-b8ab-6db99f74455b">
-            <interfaceMoniker
-              Id="204c84f8-d4d5-47ac-94fd-0d94fac5ec87"
-              LastKnownName="IReader"
-              LastKnownLocation="CalculemusModeling.uml" />
-          </interfaceRealization>
-          <dependency
-            Id="f151f47a-e2c2-4a33-8c8a-e8074bb34891">
-            <enumerationMoniker
-              Id="77c1ac73-be44-4c2c-99b2-b0bc795edbd1"
-              LastKnownName="InputValue"
-              LastKnownLocation="CalculemusModeling.uml" />
-          </dependency>
-        </suppliersInternal>
-        <ownedAttributesInternal>
-          <property
-            Id="9ebdb31b-9b56-4891-815a-6564414d45da"
-            name="vertices"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <lowerValueInternal>
-              <literalString
-                Id="bc0a5797-f3ae-46a7-931b-e4923c7b2fe6"
-                name="Lower"
-                value="1" />
-            </lowerValueInternal>
-            <upperValueInternal>
-              <literalString
-                Id="9ec1be5b-ff28-4504-8ab0-62eeb634ad24"
-                name="Upper"
-                value="1" />
-            </upperValueInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="18833a67-0405-4176-a4dc-34897f6f70dd"
-                LastKnownName="Dictionary&lt;String, String&gt;"
-                LastKnownLocation="CalculemusModeling.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="73124c45-f42c-4a71-ac29-a2bf353bd225"
-            name="edges"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <lowerValueInternal>
-              <literalString
-                Id="e1fa661a-d70d-44f8-b32a-7dc68ef0db12"
-                name="Lower"
-                value="1" />
-            </lowerValueInternal>
-            <upperValueInternal>
-              <literalString
-                Id="44b67d69-4fdd-45a6-a06b-abca3aac1a62"
-                name="Upper"
-                value="1" />
-            </upperValueInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="6762fc7e-cef1-4789-aba6-45f4a365b813"
-                LastKnownName="Boolean[][]"
-                LastKnownLocation="CalculemusModeling.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="bea5aa7b-6dc2-484a-a977-85d324c7117b"
-            name="IsVertex"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="270e5864-77b0-4315-837e-984d4e9999da"
-                  name="line"
-                  direction="In">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="d126d3fa-35cb-4718-8499-e22c1e3565be"
-                  direction="Return">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="f81475e3-ce76-4b01-8d3e-c039d9a1612e"
-            name="IsEdge"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="66c2dc07-5e71-411e-b535-8194d27abf60"
-                  name="line"
-                  direction="In">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="1d57c0ac-79df-4886-9c67-2f5f364c05c3"
-                  direction="Return">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="7bc150db-d711-451f-9b3d-416edcfb9ff1"
-            name="IsComment"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="464a41c4-c3d5-4aeb-a7ce-d6429f3b8061"
-                  direction="Return">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="7392c20e-f377-423d-b6d6-3fe1006b2af0"
-                  name="line"
-                  direction="In">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="3eaaeb41-7700-480c-b344-7b4774ecf98e"
-            name="AddVertex"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="6b944920-9f73-463e-a05d-9e4ea2b3bcc6"
-                  name="line"
-                  direction="In">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="ecee0c69-0923-41fa-81ef-a1d2304889ec"
-            name="AddEdge"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="fc0b4b72-40ff-47c3-81e6-c4e5b7023d19"
-                  name="line"
-                  direction="In">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="6dc9395f-a749-477f-b4ec-eab0e72ef507"
-            name="ReadLine"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="97dcd00d-63c4-4789-af8c-5b25e218ddf8"
-                  name="line"
-                  direction="In">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                      LastKnownName="String"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="ccceb553-22fd-452a-b20b-1229bc569d57"
-            name="InputReader"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="02390692-9b25-4871-956f-38d6a07b256e"
-                  name="file"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="f0fdeb69-ad2f-4a4f-a606-c60cb14014c3"
-                      LastKnownName="File"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="21fcc443-c13b-4144-a895-43f50e30f99f"
-            name="Read"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="d633e565-9e3a-4984-a73b-11ad39e33c1c"
-            name="GetVertices"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="707b765f-46e5-44d3-8c01-98fe9c3129af"
-                  direction="Return">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="18833a67-0405-4176-a4dc-34897f6f70dd"
-                      LastKnownName="Dictionary&lt;String, String&gt;"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="d56555ef-c770-497f-9691-606c7363f729"
-            name="GetEdges"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="81d8956d-3e8c-48a9-bff4-8b05e945bbda"
-                  direction="Return">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="6762fc7e-cef1-4789-aba6-45f4a365b813"
-                      LastKnownName="Boolean[][]"
-                      LastKnownLocation="CalculemusModeling.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <undefinedType
@@ -1291,6 +872,26 @@
           </operation>
         </ownedOperations>
       </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="26084b5c-f5f0-4032-8abd-9c1387bd18f2"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6614477a-e764-4e7a-8623-dbc5cd079def"
+        LastKnownName="Calculemus"
+        LastKnownLocation="Package1_1638.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="41e2b15c-d97c-4ed5-8ee1-f3da8e6ea455"
+        LastKnownName="System"
+        LastKnownLocation="Package_1638.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

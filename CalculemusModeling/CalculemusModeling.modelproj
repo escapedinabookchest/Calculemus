@@ -22,6 +22,18 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="ModelDefinition\Package1_1638.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1638.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_1638.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1638.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="Calculemus.classdiagram">
       <SubType>Content</SubType>
@@ -33,5 +45,11 @@
     <Content Include="ModelDefinition\CalculemusModeling.uml">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculemus\Calculemus.csproj">
+      <Name>Calculemus</Name>
+      <Project>{b4a62ac6-c281-49bd-9b84-91d374d2140d}</Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

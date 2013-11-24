@@ -59,6 +59,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IParser.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="Parser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

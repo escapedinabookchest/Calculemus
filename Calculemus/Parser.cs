@@ -9,7 +9,7 @@ namespace Calculemus
     /**
      * The class Parser parses the textfile and puts its vertices and edges in the appointed dictionaries. 
      */
-    public class Parser {
+    public class Parser : IParser {
         private Dictionary<string, string> vertices;
         private Dictionary<string, LinkedList<string>> edges;
 
