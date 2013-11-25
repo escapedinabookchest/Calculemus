@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Calculemus
+namespace Calculemus.Model
 {
     /**
      * The class Parser parses the textfile and puts its vertices and edges in the appointed dictionaries. 

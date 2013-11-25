@@ -59,9 +59,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IParser.cs" />
-    <Compile Include="Node.cs" />
-    <Compile Include="Parser.cs" />
+    <Compile Include="Model\Component.cs" />
+    <Compile Include="Model\IComponentLogic.cs" />
+    <Compile Include="Model\Input.cs" />
+    <Compile Include="Model\IParser.cs" />
+    <Compile Include="Model\Node.cs" />
+    <Compile Include="Model\Parser.cs" />
+    <Compile Include="Model\Probe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

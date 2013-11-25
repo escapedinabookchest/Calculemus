@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Calculemus;
+using Calculemus.Model;
 using System.Collections.Generic;
 
 namespace TestCalculemus

@@ -1,67 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Calculemus
+namespace Calculemus.Model
 {
-    internal abstract class Node
-    {
-        protected bool wasVisited;
-    }
-
-    internal class Input : Node
-    {
-        private bool output;
-
-        public Input(InputValue input) 
-        {
-            switch (input)
-            {
-                case InputValue.INPUT_LOW:
-                    this.output = false;
-                    break;
-                case InputValue.INPUT_HIGH:
-                    this.output = true;
-                    break;
-            }
-        }
-
-        public bool Output
-        {
-            get { return this.output; }
-            set { output = value; }
-        }
-    }
-
-    internal enum InputValue
-    {
-        INPUT_LOW = 0, INPUT_HIGH = 1
-    }
-
-    internal class Probe : Node
-    {
-        private bool result;
-
-        public Probe(bool result)
-        {
-            this.result = result;
-        }
-
-        public bool Result
-        {
-            get { return this.result; }
-            set { this.result = value; }
-        }
-    }
-
+    /**
+     * The class Component uses a strategy pattern with the interface IComponentLogic 
+     * to assign one logical operator to itself.
+     */
     internal class Component : Node
     {
         private IComponentLogic componentLogic;
         private bool[] input;
         private bool output;
-        
+
         public Component(IComponentLogic componentLogic)
         {
             this.componentLogic = componentLogic;
@@ -79,6 +29,10 @@ namespace Calculemus
             set { this.output = value; }
         }
 
+        /**
+         * The method Calculate checks if the correct number of propositions are passed 
+         * to the logical operator and returns its result.
+         */
         public bool Calculate()
         {
             if (componentLogic is OneInput && Input.Length != 1)
@@ -93,15 +47,6 @@ namespace Calculemus
             return Output = componentLogic.Calculate(input);
         }
     }
-
-    internal interface IComponentLogic
-    {
-        bool Calculate(bool[] input);
-    }
-
-    internal interface OneInput : IComponentLogic {}
-    internal interface TwoInputs : IComponentLogic {}
-    internal interface ThreeInputs : IComponentLogic { }
 
     internal class Not : OneInput
     {
@@ -119,6 +64,50 @@ namespace Calculemus
         public bool Calculate(bool[] input)
         {
             if (input[0] && input[1])
+                return true;
+
+            return false;
+        }
+    }
+
+    internal class Or : TwoInputs
+    {
+        public bool Calculate(bool[] input)
+        {
+            if (input[0] || input[1])
+                return true;
+
+            return false;
+        }
+    }
+
+    internal class Nor : TwoInputs
+    {
+        public bool Calculate(bool[] input)
+        {
+            if (!(input[0] || input[1]))
+                return true;
+
+            return false;
+        }
+    }
+
+    internal class Nand : TwoInputs
+    {
+        public bool Calculate(bool[] input)
+        {
+            if (!(input[0] && input[1]))
+                return true;
+
+            return false;
+        }
+    }
+
+    internal class Xor : TwoInputs
+    {
+        public bool Calculate(bool[] input)
+        {
+            if ((input[0] || input[1]) && !(input[0] && input[1]))
                 return true;
 
             return false;
