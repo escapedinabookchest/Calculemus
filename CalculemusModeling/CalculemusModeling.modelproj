@@ -34,6 +34,9 @@
     <Content Include="ModelDefinition\Package_1638.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package_2151.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="Calculemus.classdiagram">
       <SubType>Content</SubType>

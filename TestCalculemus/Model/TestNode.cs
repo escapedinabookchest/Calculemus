@@ -10,7 +10,7 @@ namespace TestCalculemus
         [TestMethod]
         public void TestNot()
         {
-            Component node = new Component(new Not());
+            ComponentNode node = new ComponentNode(new Not());
 
             node.Input = new bool[1] { false };
             Assert.IsTrue(node.Calculate());
@@ -22,7 +22,7 @@ namespace TestCalculemus
         [TestMethod]
         public void TestAnd()
         {
-            Component node = new Component(new And());
+            ComponentNode node = new ComponentNode(new And());
 
             node.Input = new bool[2] { false, false };
             Assert.IsFalse(node.Calculate());
@@ -40,7 +40,7 @@ namespace TestCalculemus
         [TestMethod]
         public void TestOr()
         {
-            Component node = new Component(new Or());
+            ComponentNode node = new ComponentNode(new Or());
 
             node.Input = new bool[2] { false, false };
             Assert.IsFalse(node.Calculate());
@@ -58,7 +58,7 @@ namespace TestCalculemus
         [TestMethod]
         public void TestNor()
         {
-            Component node = new Component(new Nor());
+            ComponentNode node = new ComponentNode(new Nor());
 
             node.Input = new bool[2] { false, false };
             Assert.IsTrue(node.Calculate());
@@ -76,7 +76,7 @@ namespace TestCalculemus
         [TestMethod]
         public void TestNand()
         {
-            Component node = new Component(new Nand());
+            ComponentNode node = new ComponentNode(new Nand());
 
             node.Input = new bool[2] { false, false };
             Assert.IsTrue(node.Calculate());
@@ -94,7 +94,7 @@ namespace TestCalculemus
         [TestMethod]
         public void TestXor()
         {
-            Component node = new Component(new Xor());
+            ComponentNode node = new ComponentNode(new Xor());
 
             node.Input = new bool[2] { false, false };
             Assert.IsFalse(node.Calculate());

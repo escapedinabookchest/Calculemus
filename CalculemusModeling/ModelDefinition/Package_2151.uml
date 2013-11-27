@@ -1,0 +1,2405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="0e270610-4727-4f51-ab2b-9de928f2a147"
+  name="Model"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0ee4f12a-3024-4501-9d1c-aa592480e5f0"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DCalculemus.Model"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="5b5bbc5e-f83a-4d0d-8b17-344fd91244af"
+        name="OneInput"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a40b91b0-8a2e-4ba7-ac5b-a40e0c33e6af"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DOneInput"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="73a69431-f4ce-48aa-8da3-9ff9ff74ec24"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f6b024dd-6e63-4239-b426-bbf36767cbda">
+                <propertyInstance
+                  Id="f66842b2-c751-4b9a-bf0d-c86f4540cf6b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb5cd427-da3d-4d11-b8d7-271eaf7d1279">
+                <propertyInstance
+                  Id="ccda52c4-c699-42ee-9399-24b157836a57"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2532abf1-0c36-4a4e-b855-e29dba93fd5d">
+                <propertyInstance
+                  Id="4769d008-5f19-44e9-bf21-6192652d59f8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fafda64e-2c15-4ba9-afd4-becdb696a076">
+                <propertyInstance
+                  Id="057e55d2-a54a-4d24-860a-6a89c230d555"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="7b5cdff5-abf1-42e6-9981-39b555c47916"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87ef5765-e849-4c1e-8ea5-2f6320116282"
+              LastKnownName="IComponentLogic"
+              LastKnownLocation="Package_2151.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="87ef5765-e849-4c1e-8ea5-2f6320116282"
+        name="IComponentLogic"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a6d7267e-4f72-4d9a-a15d-741f6814b8cf"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DIComponentLogic"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="feb52136-6818-44c8-8cf3-8932a432a7f2"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c966451-94c3-4787-9d31-749574ac99a0">
+                <propertyInstance
+                  Id="93b70f37-ecb8-4566-943f-54898e071202"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a8f12963-bfc2-41ae-b4b6-0e5357da96d7">
+                <propertyInstance
+                  Id="a8e71893-1b6f-4950-927b-015fce65f9fc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e54af2ab-8158-4c11-92f0-6593a6f7ff5d">
+                <propertyInstance
+                  Id="c592ecd8-0a63-4e38-8b34-0078db407e2b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fb1ae9d0-7f5b-492d-9617-1dda44d0cc02">
+                <propertyInstance
+                  Id="661e55e5-0093-42fe-91de-0c6861ef86fe"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="7daad329-fb60-4222-8ad7-314a7a7a5716"
+            name="Calculate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="58cadfc7-2c0b-4079-924a-45d5dc60a72d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DIComponentLogic Member%3D(Name%3DCalculate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DBoolean ArrayRank%3D1 ParentType%3DBoolean))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="00f912ce-5c2b-4273-92d0-92e3c398767d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66e96e33-1d7c-4c1c-83d8-c2ede77fc641">
+                    <propertyInstance
+                      Id="3080c1cb-e559-4813-a207-f3c95c0c87c7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbb602dd-949e-418a-93c4-20803019908e">
+                    <propertyInstance
+                      Id="254fb182-40cd-41c1-9534-1163f0912436"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3db76f3c-6463-47bc-a8fc-eb1020cf6490">
+                    <propertyInstance
+                      Id="2ece3fd2-4cbe-4ba6-9288-bbeb10490dad"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="220f76e7-deaa-4647-8c79-ec9124d3f159">
+                    <propertyInstance
+                      Id="294f58a7-2260-43b2-97f8-21e71fc32ea9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85f6e9a9-0ffb-4b19-9531-06cf77781ec5">
+                    <propertyInstance
+                      Id="e5e03d05-15e5-4293-aaa5-e5b102278cd6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0545e7a7-672b-47d2-ad1b-7a7437daa64e">
+                    <propertyInstance
+                      Id="3141f309-ecbd-4445-b203-14f21f566e2e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="16823d95-f933-4382-9644-4be2894e46e7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="578a8272-f1dc-4cc8-976d-8cfed0e41f26"
+                  name="input"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="5e897e59-ab8a-4320-a048-46240ec4003d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DIComponentLogic Member%3D(Name%3DCalculate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DBoolean ArrayRank%3D1 ParentType%3DBoolean))]) ParameterIdentifier%3Dinput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="df943c6b-8170-4569-8dcf-eaf29dd3a355"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dc73f0c5-3a5c-401c-8a43-e6d629f5eea8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b1210919-7a36-4607-bbc3-4bce59105f65"
+        name="TwoInputs"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="aadc9ddb-8a2f-4600-a9ce-4963aa6dc6f9"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DTwoInputs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8a11d08d-9502-4c92-bc2c-69393b1110b4"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="11cf9881-77b0-4f09-86bb-346a0105d4e9">
+                <propertyInstance
+                  Id="c68e59f1-2e1b-4a2f-a78a-1fccd58a71eb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="01f5ddfd-3da4-4048-a258-929a8b765730">
+                <propertyInstance
+                  Id="980c53f3-d86e-4aa2-b526-37ecb1d86376"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="54116b5f-399e-4bf3-bc0f-d9d7e1fbe5e0">
+                <propertyInstance
+                  Id="1f1b125b-ab39-4132-a9ff-6f9ef2b1e2c5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="880aa9f5-7834-427e-9b4f-bce7e968cec6">
+                <propertyInstance
+                  Id="afbc8b89-0318-49e7-9de9-f225edceaab1"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="e93c78d7-ba4c-4656-9cfb-8cf936d94925"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87ef5765-e849-4c1e-8ea5-2f6320116282"
+              LastKnownName="IComponentLogic"
+              LastKnownLocation="Package_2151.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ba89fe73-b9be-4fdd-bc56-0b616fba6d10"
+        name="ThreeInputs"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="3b30f178-904a-4770-8ddd-ee5e3f6afd27"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DThreeInputs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="985833d3-3678-4412-935a-3b6d3565c6c1"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8cc95934-e255-47b2-9172-46a0c94052ea">
+                <propertyInstance
+                  Id="c0e0c4ac-3c31-4cd5-ae2e-1c6bf5699f2f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="63b5d315-bac3-417a-a462-e6858103f270">
+                <propertyInstance
+                  Id="c7d0ef2d-a902-4821-a73a-3ff9e7dac3ad"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="52d22744-506e-4d83-a17f-26388f591353">
+                <propertyInstance
+                  Id="e043bed5-c7a5-4cab-923c-07bb8a2b335d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a6cdfa6-b936-412d-b36d-aeea3fb0ddb2">
+                <propertyInstance
+                  Id="ff9bcbd4-4718-4b90-8741-f974f3237db8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="f539cf25-4d3f-41d4-9627-d3525ce6dd55"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="87ef5765-e849-4c1e-8ea5-2f6320116282"
+              LastKnownName="IComponentLogic"
+              LastKnownLocation="Package_2151.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="448a9276-8dad-47d9-a4f0-844cd3ce9e9a"
+        name="And"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a0c59abb-533a-4a66-9a6d-8feda979dc7b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DAnd"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="83efdea8-ed76-4404-ab43-46948ded1f18"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="55ecf240-74f1-4167-9f86-3ff1e0711ff1">
+                <propertyInstance
+                  Id="f5445ed8-02d7-409c-a72a-3e7aa8f05b77"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1ba34b00-69b7-4eb4-89ac-422734918573">
+                <propertyInstance
+                  Id="4093c0ff-0978-4610-8e64-ef40d3baf00a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="be30d72f-c97b-40ec-96f6-e77f235a722f">
+                <propertyInstance
+                  Id="017624f5-5c65-4f6b-9197-ac941ad3b923"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ed07b851-046a-4963-a348-6eaf99678a80">
+                <propertyInstance
+                  Id="7955539a-d3eb-4038-ba15-24cb1771c8e5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="514bfdb1-24ed-4e1c-9cdb-623ff5848f60">
+                <propertyInstance
+                  Id="48fcf0cb-da70-4d29-ab53-6c7d217c4d69"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="dc9ba17d-2f06-4f8f-8276-4537d3276a38">
+            <interfaceMoniker
+              Id="b1210919-7a36-4607-bbc3-4bce59105f65"
+              LastKnownName="TwoInputs"
+              LastKnownLocation="Package_2151.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6a6d5aaa-2144-4cb7-b5ee-19c3602ac32d"
+            name="Calculate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5c396ea7-cda1-456d-bb90-df5796b49571"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DAnd Member%3D(Name%3DCalculate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DBoolean ArrayRank%3D1 ParentType%3DBoolean))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4cc5f671-f5aa-4063-9322-0b06c481d871"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6072475-f33e-4194-a49d-290e4f25d877">
+                    <propertyInstance
+                      Id="85544394-fe9a-4c25-ab4b-163e699da3e8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5fc5d50-4492-4377-ac8f-965657230e65">
+                    <propertyInstance
+                      Id="bca1572d-4d88-4a4b-aa19-76bdbf77912c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5fb2955-fe3e-4b18-b174-d7a436631c6f">
+                    <propertyInstance
+                      Id="8801f327-c2e2-4426-8280-bc69ba49185e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4d2cb2d-7f9c-42cc-87e4-44f99ca8029c">
+                    <propertyInstance
+                      Id="6db8d164-b525-4b2e-a57f-efdd5ac336fe"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29b803fb-a811-4323-a8ef-1b6a16741efb">
+                    <propertyInstance
+                      Id="b6a77327-3b18-45e9-9e35-890af3ddf511"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bfc21c5-ae5f-4402-a5ba-9fea87b81863">
+                    <propertyInstance
+                      Id="c8a34f96-57af-449e-bb93-bed8c6551574"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63c0f30c-1517-409d-8435-d2d2e301e8b1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9dcb7e2d-9bb7-4b3d-b684-1859be7d475c"
+                  name="input"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="03ba2cdd-df5f-4179-822e-8c3e9d68c140"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DAnd Member%3D(Name%3DCalculate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DBoolean ArrayRank%3D1 ParentType%3DBoolean))]) ParameterIdentifier%3Dinput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="11f876c8-b5f6-4006-bddc-d8d81b024e3a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="af1303fa-8e6a-4b52-85af-62b98ad63066"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="19a0e63b-0b4f-451f-9918-c756fa3433da"
+            name="And"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ee0cc43f-96fd-4447-a1f9-bd1102292a92"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DAnd Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a92903c0-4b44-4dc5-9423-c73aeeb26d7f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65e9fc59-f5f0-49b8-9442-f503a5613441">
+                    <propertyInstance
+                      Id="1e854d46-a383-4be8-91d6-78173f9ed455"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f3a01d6-1a4a-4f38-8223-c12ea8900ada">
+                    <propertyInstance
+                      Id="3c9e367a-d86d-4df2-9388-2f493c87c44b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07e62ec8-3ab9-4d30-82f3-f547130d182b">
+                    <propertyInstance
+                      Id="24410f44-1743-42cf-a48f-0d49b6f29593"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58387a93-3a5b-41a6-bee4-77342b1856d8">
+                    <propertyInstance
+                      Id="9a635fd1-44e4-41d0-ac8f-d65dcd108e61"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c585f9f2-dd33-47fa-adf2-2e5523af3d1b">
+                    <propertyInstance
+                      Id="d58eb9bf-07b0-4a34-9b0d-5c8e56f6a7f3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34f1edaa-f85b-40b6-8d41-abc63d3a546f">
+                    <propertyInstance
+                      Id="c7864720-7480-4793-bc32-7bfe26959d08"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c0e0f52e-6883-42e7-b664-9a4789bce0a9"
+        name="Not"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7e3dba0d-c67e-4c72-a8a2-9c4df818f9a7"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNot"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0fecf453-fde4-4728-86bd-6b814118db43"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="45f2fe6f-c03d-47fd-9325-60650f954ade">
+                <propertyInstance
+                  Id="3049ecf6-a2fa-4899-ab04-eff739bd2c75"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d20bb661-fec0-49d7-a3c3-5d89e50e85b5">
+                <propertyInstance
+                  Id="e283d6cf-f61d-4ba0-9522-1d64320c6cd6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e93c3aa-c3d0-453f-bf45-56ea2f1827c7">
+                <propertyInstance
+                  Id="d85dd84c-7424-4da5-a011-e68237e620a3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d7dd2ce3-9429-4eee-9c57-e584b64aba2f">
+                <propertyInstance
+                  Id="7e5db84c-44f8-4324-a7ee-b8c46b0c5ec3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b7c7e2c3-0c0d-4cbb-8e0c-4a29760e37d3">
+                <propertyInstance
+                  Id="69441d6d-44ac-4c32-9571-15536b225b58"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="086f31a6-633c-405c-813a-a092e99d3078">
+            <interfaceMoniker
+              Id="5b5bbc5e-f83a-4d0d-8b17-344fd91244af"
+              LastKnownName="OneInput"
+              LastKnownLocation="Package_2151.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4fc0c179-04dc-4c2b-b2b4-46eeb9059a77"
+            name="Calculate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="98e52df0-ba38-4175-a899-9b365f6e9038"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNot Member%3D(Name%3DCalculate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DBoolean ArrayRank%3D1 ParentType%3DBoolean))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6e9589f0-9c80-4e4a-a401-0f57a144fdbc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab9102c3-9965-4738-a6c2-2d3a2d928102">
+                    <propertyInstance
+                      Id="badf02f6-882e-4528-b5ef-2f13103086dd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ef25bce-646c-4d63-9236-9e02f093bfdf">
+                    <propertyInstance
+                      Id="54f0d988-4fba-475c-a523-5d77442c52fd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e6cf016-2b4d-4ade-bfbf-52f2959d5e19">
+                    <propertyInstance
+                      Id="c566e3dc-b0da-4593-ba94-cd06304b6510"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc49f47a-cc28-42e5-a12a-2a4189cf0ac4">
+                    <propertyInstance
+                      Id="1fad0aa0-2b70-4c24-a1d8-ee60c810ee17"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6799e86a-d00d-46ed-89d9-8d01ccee4b15">
+                    <propertyInstance
+                      Id="0679a543-f653-4d6c-9c2a-44779dc96a55"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58e12075-142a-4753-a54a-8a1c57b14465">
+                    <propertyInstance
+                      Id="460e6237-57cd-40a4-92ab-8969d4d6784d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6e1f0e89-d777-452b-b37e-13aacfc09c6d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f607a0e5-0e25-48b6-a98a-a840bfc43125"
+                  name="input"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="3329f50f-5527-4d96-aea3-23773ed65a7f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNot Member%3D(Name%3DCalculate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DBoolean ArrayRank%3D1 ParentType%3DBoolean))]) ParameterIdentifier%3Dinput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="35384c0b-b610-4074-b018-1f691aada9f5"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4a42d668-9aed-422a-9409-1c6c75f19788"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="de075592-64ba-4fe5-aee5-e2e4f7d08147"
+            name="Not"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="25c06988-3666-4585-8e8b-1acbc07410a5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNot Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7e7bc58e-7d4e-41d3-8814-dd2010d31b4e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cc81727-f2f5-400a-b8f1-685898941c4a">
+                    <propertyInstance
+                      Id="4ea0ef57-51db-4597-ac27-e8930aa83a2e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3723b13-bc01-486d-a61b-f1a1bb768bb0">
+                    <propertyInstance
+                      Id="36fc2565-a98a-4c62-90b6-73f1ef428cd5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8337063-895f-4c6d-abf4-0ca64abf775f">
+                    <propertyInstance
+                      Id="6c65d20a-e265-45d3-bb0a-45c1102dfd68"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45960e81-b794-4ee6-83a6-31661e70ca92">
+                    <propertyInstance
+                      Id="38753b46-9f40-4ff1-affd-8025d4b9225a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5095685-4789-43e9-a938-279ce27bd51b">
+                    <propertyInstance
+                      Id="a4d9357e-8ad5-4638-a980-b739f133569d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30e9d1a6-0f6e-4691-b8ff-cf0a53ef3cb0">
+                    <propertyInstance
+                      Id="ee262aa6-fd60-409f-bd50-4c3b7aa50f08"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="df9af5ce-8c70-43d2-9480-223aeaff9b30"
+        name="ComponentNode"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d2facc2e-c648-4129-a46e-d6d4beea200b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DComponentNode"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="12f82faa-ac84-41a7-a98f-cf5fdce69d2e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="911c59c2-d5c6-48e2-b952-292ea1e2646f">
+                <propertyInstance
+                  Id="f27ac143-d03d-47b1-a5e0-ce4c52c00964"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c8d79f8-2021-47bd-90e9-422403d4b5d1">
+                <propertyInstance
+                  Id="06384d98-5f94-40ab-8529-997362a01744"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fbea1f1a-5607-446b-afaa-269e4b8b8f21">
+                <propertyInstance
+                  Id="6305a685-c1c3-45bd-a78c-e18e12f0859d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a69e53a0-7bcf-4550-9163-6411141d09ca">
+                <propertyInstance
+                  Id="f7ef90a1-3a91-4c3d-a3b2-d121633bf37a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8cf53b13-ee8c-4555-99c2-131fe373e868">
+                <propertyInstance
+                  Id="6697533d-7adc-4409-a1b2-b4ae8101851d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="8d0476ff-4b9f-4478-bcce-9fef1d072156"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5e043342-d5a4-451e-8ec2-a52d4af77d73"
+              LastKnownName="Node"
+              LastKnownLocation="Package1_1638.uml" />
+          </generalization>
+          <generalization
+            Id="b564a89d-062d-4b88-aa4d-039beaa5dc9d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f1251cd2-83e4-4612-b854-ae035173dc8d"
+              LastKnownName="Node"
+              LastKnownLocation="Package_2151.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="524cb2cc-742c-49a8-85e1-d077c9ee408a"
+            isDerived="false"
+            sourceEndRoleName="ComponentNode"
+            targetEndRoleName="IComponentLogic"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="87ef5765-e849-4c1e-8ea5-2f6320116282"
+              LastKnownName="IComponentLogic"
+              LastKnownLocation="Package_2151.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e3dcf047-9683-474f-8175-ecb6bb7ddfc9"
+                  name="ComponentNode"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8aa3de74-f68d-4a32-b857-c23dbb49fffc"
+                  name="IComponentLogic"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="25aad01f-6eaa-4595-a4bd-3864590efec3"
+            name="componentLogic"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c675f332-404e-4d38-b5fe-015527daf06b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DComponentNode Member%3DcomponentLogic"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f44aec71-8865-48bb-b365-f80dccee9af7"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="591da3a1-c876-482c-b181-e00773835237">
+                    <propertyInstance
+                      Id="15653ca2-324f-4449-be26-1ad6e9ecb184"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a6a792c-d136-4bf1-98cf-3e2b9ba49813">
+                    <propertyInstance
+                      Id="1e1b4d63-6848-4d1b-ad5b-34a8a57c8ef0"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4b2720a-4023-40d2-8c15-eefa24500ca0">
+                    <propertyInstance
+                      Id="58a787cf-8002-4b11-a04c-48b6c7ca3bc4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63a1e369-76bf-43da-8c15-90e980197905">
+                    <propertyInstance
+                      Id="41c6bb5b-ab1c-42f4-b89a-95125c277ccc"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5a8c628-2a8b-45cd-9191-7242b618b9a2">
+                    <propertyInstance
+                      Id="2d69b7a1-6d06-4631-bec1-810a494048ff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="87ef5765-e849-4c1e-8ea5-2f6320116282"
+                LastKnownName="IComponentLogic"
+                LastKnownLocation="Package_2151.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1e600eff-03af-4444-87ba-d221a3b34842"
+            name="ComponentNode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="25b9d58a-f2ab-4e90-84f0-cafb97ab44e1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DComponentNode Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DIComponentLogic)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8d75ef5b-96f5-4caf-927d-f7ef68556c14"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41762657-8028-4f2b-87d3-1338d52aaa35">
+                    <propertyInstance
+                      Id="437c7642-2dd5-442a-a242-da6127099dcb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc6438da-0e3e-4d27-b1aa-a3e6c7c3956c">
+                    <propertyInstance
+                      Id="c751efd9-85f2-48cc-bda2-b91dd2989448"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b8889b1-2b11-4cda-8b57-1af13395716f">
+                    <propertyInstance
+                      Id="ff59e01a-4a07-4de3-91aa-0f88aa252bbc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="112bb7ff-ebe5-4fc5-88c3-0f147d5ecdd5">
+                    <propertyInstance
+                      Id="57d54b93-dd8f-49fe-973a-89e2125ce75f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f12d637-edaa-4eb3-866d-c03c401f1a97">
+                    <propertyInstance
+                      Id="9de8130a-52d7-482d-880e-5b9787dc9a81"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae116a78-8abc-4670-ab13-23f0534de963">
+                    <propertyInstance
+                      Id="f56be3f2-c20e-4555-b0b1-dff0e4f318c5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4be83a87-a45c-4b8f-99a6-855b1bcd16fa"
+                  name="componentLogic"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="41a2d757-7532-49ad-ab66-320ffda85d3f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DComponentNode Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DIComponentLogic)]) ParameterIdentifier%3DcomponentLogic"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="87ef5765-e849-4c1e-8ea5-2f6320116282"
+                      LastKnownName="IComponentLogic"
+                      LastKnownLocation="Package_2151.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="78a207c5-32f6-4826-99a1-5485fd3bbc8d"
+            name="Calculate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1ee41cbf-eaa2-4eb8-88d5-bda0aaa089e3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DComponentNode Member%3DCalculate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="83947214-ee24-4bf2-94ca-9b83c301aa0a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41b701aa-9be8-4784-beff-44cbac793b24">
+                    <propertyInstance
+                      Id="634bf82f-b3d8-4181-8264-b51a9dda0ad9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efb33feb-ba41-46a1-bfc0-d83b4660be21">
+                    <propertyInstance
+                      Id="dbaeff0e-c61b-4347-ad29-1c46e5d1aa59"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5117a4ed-abfe-409d-999a-23619b6607d5">
+                    <propertyInstance
+                      Id="891aac3c-a634-467d-905b-4f1848133a0d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe4eaa3c-9aa1-4d89-bc71-c65c6190f5a4">
+                    <propertyInstance
+                      Id="c8f03fb2-5296-40ba-9fe7-c9d2aca3e2ca"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88b01503-014f-41b5-9b94-c9ca2d9cb598">
+                    <propertyInstance
+                      Id="d76dba88-7181-4d78-801f-cc65c71909b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd507a2d-b2a1-4f8e-a38a-b519a975fcfa">
+                    <propertyInstance
+                      Id="331be7d7-303f-448f-9718-cca5aa43a451"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="50e983cf-f7a6-4879-b115-905aca8f6c7f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="59903319-8242-4d61-b4e3-1898f5d2a69d"
+        name="InputNode"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0aefceed-53cd-48c5-85ca-877ae195cf3e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DInputNode"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7ef8abee-b6aa-4242-907a-9c689bd8c212"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9af783f9-6991-4b83-9c1b-7336b3fe019b">
+                <propertyInstance
+                  Id="43536c1e-95ba-418e-b4bd-dcb92f7d4057"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b2f4001-3e33-4b8f-9f44-484f0e7c131f">
+                <propertyInstance
+                  Id="8ed1086e-d388-4bb1-89fb-185a491afe68"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="07f47086-c699-4986-a34f-948ab132d997">
+                <propertyInstance
+                  Id="796d5ea2-f3fa-414a-bfad-3aaef297344e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="38a44343-f725-4b06-9b60-b1a63ee3b07a">
+                <propertyInstance
+                  Id="b030cdae-a503-40d7-9731-a1209f1baf7b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="442520b5-3b6a-49b4-81ce-90573eb055cc">
+                <propertyInstance
+                  Id="53f0bd7b-1e64-4721-91c5-6892b1b13375"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="70f57214-ef3b-4488-bd43-a34a07081bb3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5e043342-d5a4-451e-8ec2-a52d4af77d73"
+              LastKnownName="Node"
+              LastKnownLocation="Package1_1638.uml" />
+          </generalization>
+          <generalization
+            Id="3f00b67d-0658-422e-beaa-b6852c5de891"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f1251cd2-83e4-4612-b854-ae035173dc8d"
+              LastKnownName="Node"
+              LastKnownLocation="Package_2151.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="87780448-a216-4749-8f84-7cde9b66f8cc"
+            name="Calculate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="eeacbb71-785e-4def-8da9-80a11b2712c1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DInputNode Member%3DCalculate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="89d6f858-c81b-4d5e-a171-eae08b558711"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c64faab-1203-4a83-9e6d-9c1a8826ba80">
+                    <propertyInstance
+                      Id="dd6cacaa-485d-4e41-bab7-58793141cbb6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8b68daa-6549-41ec-9f31-cd9319195a85">
+                    <propertyInstance
+                      Id="4ab804fd-d227-4007-a45e-903aab66a1ac"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="baf96b7b-0274-4b3d-b676-e132a777df95">
+                    <propertyInstance
+                      Id="79abc4e3-f648-475d-8ae9-8ce7536d491c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2018757a-7802-4c67-bd08-6e9c21f27635">
+                    <propertyInstance
+                      Id="9f3065d1-5265-40d4-8d19-0784ae142d8e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="557f5f1c-5fa2-4f79-9343-94f78b37b483">
+                    <propertyInstance
+                      Id="d336ddbc-b180-4508-bbf1-d83bf39decfb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="894f95ba-7d8b-46f1-9ce7-5da1b897e972">
+                    <propertyInstance
+                      Id="c859a05b-4a74-4ba6-88b0-2145ab7f0cfc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6de4beed-cda8-4d2e-8d10-4e7b2a367c40"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a4d3f26f-d8ce-497e-b448-3a99c5eb0bc3"
+            name="InputNode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ad8da200-3045-45da-93b5-42c30c63e6ba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DInputNode Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="70e49b28-71ac-4f6c-9646-3de2078e7819"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3af6df48-917e-49d6-8c36-22202fa35779">
+                    <propertyInstance
+                      Id="a9dbc261-05b2-46d0-9557-3a765c2ef5ae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5aaaa5dd-125b-41f0-ae50-3ae68827c5d0">
+                    <propertyInstance
+                      Id="814ba5e2-c303-4eb8-ad5d-0c42d549133a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f741c7a4-ec87-4f3e-9ef4-cb69532003b5">
+                    <propertyInstance
+                      Id="81a583c5-e681-4cec-b707-58275bdb7af6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdbe3620-7f5f-4870-8ff9-75b5e862d583">
+                    <propertyInstance
+                      Id="46cd1769-8ef7-4e03-a149-5a0cfdb699fa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f166bf6e-0bb6-4709-b029-37a3a4e8a61d">
+                    <propertyInstance
+                      Id="a7dba2a0-540f-46d7-a724-cf496fd2a677"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec3cc523-2aec-497c-9e35-fecfd8208202">
+                    <propertyInstance
+                      Id="adda28d3-68fb-4ad2-a8fa-a3957c758a03"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="20cba820-9892-4142-acfb-2736f70911f4"
+        name="ProbeNode"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="caba409e-3a2c-4e19-a55c-ffbe49d2b002"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DProbeNode"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="60014af1-1dff-4367-b2aa-fe4679693a43"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4aa86355-dedd-4f77-bfbc-c4e1c73a3e81">
+                <propertyInstance
+                  Id="5ee03236-6abb-4de0-95d7-bab40b4ab125"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7912542a-6e3e-4470-a876-f381546e62b2">
+                <propertyInstance
+                  Id="d05bec58-2912-4a27-b3a0-524f35f23cb2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="19f6cef6-71cf-45bc-99b4-edc0edee3e2c">
+                <propertyInstance
+                  Id="f6d2d0f9-7a8c-45e3-ab0c-ccb87453662a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="663e1b35-6ac0-4e76-86e9-d98e42f50b38">
+                <propertyInstance
+                  Id="739840de-5514-4032-b2a6-0f6a333417af"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="69c8bf90-682a-45c4-a6e7-1eeffe85c295">
+                <propertyInstance
+                  Id="d95f52d0-e77d-42b3-81a2-a7644b5fd830"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="fb9883cb-7716-42c6-aa84-60eb6b7cdd49"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5e043342-d5a4-451e-8ec2-a52d4af77d73"
+              LastKnownName="Node"
+              LastKnownLocation="Package1_1638.uml" />
+          </generalization>
+          <generalization
+            Id="8450392c-ac81-4f99-ac14-e4f3322c1e44"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f1251cd2-83e4-4612-b854-ae035173dc8d"
+              LastKnownName="Node"
+              LastKnownLocation="Package_2151.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="dd547934-9e20-42a0-b85c-4c520c70b9ed"
+            name="Calculate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="60285540-12d8-42eb-8fec-9578f145a360"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DProbeNode Member%3DCalculate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f2cdcf2b-2b8d-429b-85de-3aa64e59fa2a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="369e64f1-fd21-4e29-b3f6-f618d2f95f3c">
+                    <propertyInstance
+                      Id="2876eee5-1532-4974-bf3d-93c1b759c99d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="199f380f-025e-4dcb-8053-a309f5e1d974">
+                    <propertyInstance
+                      Id="0518cd12-3df3-4c2e-b5ec-642a0ea2ff18"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddc27a42-b627-4658-b2f2-81e8369f6321">
+                    <propertyInstance
+                      Id="52dfe65e-46d1-4d63-9b5f-ce84898752fe"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d819086-7123-4627-8dfc-cbdc817e99e7">
+                    <propertyInstance
+                      Id="4ae34b6d-8464-464b-9402-4181f6d76f06"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82de6501-9f50-437b-b758-4adec29a1cf7">
+                    <propertyInstance
+                      Id="66584546-5885-4cbf-a2bd-459dc26a0ace"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b353c3c-c262-4dd7-b4c2-d1927203b24d">
+                    <propertyInstance
+                      Id="d62afc00-862f-48af-b644-53f7936037ee"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b7b67bec-8f0a-4615-9d2a-3d7375518375"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="408d6c51-c003-496a-9806-cb5dddc7e591"
+            name="ProbeNode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e5acf056-2885-4906-bb02-8e4320ccd0b3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DProbeNode Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1d6dbe46-81d1-4858-b6dd-a1846631f2c0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b7a3214-b6ec-49b0-b367-52fcdcea3bd0">
+                    <propertyInstance
+                      Id="50fd9a3a-5428-4eca-ad1b-68cd2f210f4a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="745bbd42-9932-4ec4-be21-16e5e263c7df">
+                    <propertyInstance
+                      Id="c3ab29a7-35e1-4d6c-b695-21c362a7ea7b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="457ff8e6-138f-485d-bf7a-0932e4eeb3b4">
+                    <propertyInstance
+                      Id="ec160999-b1f5-4f7d-8786-ee5a9a27149e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a750cbd7-bf08-4eb2-b190-c67fb96ab48e">
+                    <propertyInstance
+                      Id="087485d5-8bb4-4c6e-ba06-7f6fc574a4c2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48c7c8b2-7703-413b-a0fc-c2a81e7f3d96">
+                    <propertyInstance
+                      Id="e60a58b9-ebac-42ce-b7c2-5912fc22f34b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f04674a-09dc-4768-91a9-83272b6637c6">
+                    <propertyInstance
+                      Id="b5c63003-b6ed-40fa-b04d-87a232c510ab"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f1251cd2-83e4-4612-b854-ae035173dc8d"
+        name="Node"
+        visibility="Package"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="642f6003-7b28-4e48-b998-830dd3d8a498"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNode"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="810b12b9-5204-4759-9051-e49514186fcf"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9585e76d-5abd-40da-98d7-b445517a1591">
+                <propertyInstance
+                  Id="d35fcb70-e5d7-41bc-9d7d-31a03baedfae"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60a74323-37a0-4652-a62f-dc014e5b8060">
+                <propertyInstance
+                  Id="b7ab5485-5f6a-4a94-80c6-52f6989d0b3f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8d5ca632-6710-43b7-9743-1b353eafa0fd">
+                <propertyInstance
+                  Id="526ad4b8-ae2c-4528-8459-23d720998b68"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3c307a72-78a4-4b1f-a81f-ebe54098651e">
+                <propertyInstance
+                  Id="ab462a71-3a8a-44ac-adca-18ebf60d2821"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a2a3d099-1b77-449a-8356-431035c2aa24">
+                <propertyInstance
+                  Id="26093e44-b9ba-40bc-8a93-8b7a721ff28c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="56574270-7f0a-4202-abd0-956d88216e03"
+            name="Input"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1ee5b04f-7267-42a1-be93-c3eaba8adce4"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNode Member%3DInput"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="55400f59-1c14-468d-8473-f5384637824e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3ccfd75-0da1-4c0b-a351-938d0db0b340">
+                    <propertyInstance
+                      Id="1d325acc-be9b-4d15-bdd0-14979bd5beeb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d634acf-d817-446e-b856-98b395120f97">
+                    <propertyInstance
+                      Id="724d2ebd-1cfc-4137-a191-9cd0f68d65ca"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e9347b5-51e1-466f-986c-ada36b01ccde">
+                    <propertyInstance
+                      Id="2dfa0404-ef69-4b4e-9ea3-acc3b750977d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fda1184-b4b9-418f-9be8-f519bab8b541">
+                    <propertyInstance
+                      Id="a1e48b51-401f-4214-9469-4c5e550b3588"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29adb80c-84e2-4874-8eeb-f13e8a22c9fa">
+                    <propertyInstance
+                      Id="0aea4865-7070-43ae-800e-170747279ad9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3053acd8-00fe-43c6-8df1-35d6fec9788d">
+                    <propertyInstance
+                      Id="0663a2a9-c34e-4c2e-a8fa-2ef0afb4d27b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d56d270-92ee-472f-9809-afa23c4923de">
+                    <propertyInstance
+                      Id="860b991c-491c-43b9-a827-95f79446ce11"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="24179f17-3445-4874-81bb-fdd4f7fa0702"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="3327cc9f-83fe-4ab8-8092-61d67f237e24"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="CalculemusModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="213bd3a1-4351-446b-a439-f9699d26d3e8"
+            name="Output"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="441a464a-4f86-454b-933c-7b87a561ed41"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNode Member%3DOutput"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5db0b4b9-49bb-41fd-94ea-9bb9e6b4a6a4"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89f59860-81e8-4b3f-bbfd-487ad90d3119">
+                    <propertyInstance
+                      Id="0186a7ed-8781-415a-a4d5-d3f8651e5ea4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63f5929e-2e9b-48f0-9e98-33e7e86f6bcf">
+                    <propertyInstance
+                      Id="43a5669d-d157-4602-ad4d-649cbad2cdc5"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3610437d-80e6-46fd-b53e-cec8940445e5">
+                    <propertyInstance
+                      Id="dc795dff-e862-497e-8249-89bed0ab730d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c12fdb3c-2714-43e4-85c9-b68e414cb82a">
+                    <propertyInstance
+                      Id="4c29b1f7-4c52-4075-83ca-c6982c35c2e5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b270107-5522-43d9-b890-a58bf8ae8031">
+                    <propertyInstance
+                      Id="00fa5275-32e9-4bf3-b705-2fcb2d8a35ea"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41dc7188-a7b8-4e86-b6e1-ebfb48532ccb">
+                    <propertyInstance
+                      Id="f3c6fe41-93a7-4272-a71a-ca3e0949ae68"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be04c025-0c07-4c04-a883-eef61fdb748d">
+                    <propertyInstance
+                      Id="2886d520-6534-41be-b6f4-e2fc7a1aeb42"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="CalculemusModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="69031fe1-38c1-4ae4-bcb2-9ca0bc16695a"
+            name="input"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="168d1638-7837-4170-b494-c1731b348702"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNode Member%3Dinput"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f668d38d-94a9-40db-a0d3-7be2a8ce5146"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab4e882f-9f97-4995-bb71-f7f8dc75eb3e">
+                    <propertyInstance
+                      Id="aa336488-041e-41f0-9d3c-a5f211eed8a9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b49b290-3fea-4813-b8a7-4ac41aaf2190">
+                    <propertyInstance
+                      Id="ad0318c5-cf69-436e-9dd3-de00740fe8cc"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1cf950b-7261-4c47-b05c-cead56582ab0">
+                    <propertyInstance
+                      Id="2018b41d-2b9a-4695-9425-ff46edc0ec2c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0aff22a7-b4d0-4ea9-8d5b-e5b3d7a8d12c">
+                    <propertyInstance
+                      Id="ada9bcaa-7ee8-4bee-b904-43fe2472bdea"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b907d7d-bb16-49e3-9780-8d1f658a8a80">
+                    <propertyInstance
+                      Id="7e65b754-ba11-4583-ab22-ff0cc667605b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="7b8c8b52-de33-4c3e-b125-718d3a7a1bab"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="a6c5855c-6a81-41f1-9196-537ed059ef49"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="CalculemusModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2c9bdcf1-232a-4045-9184-724c6c474de4"
+            name="output"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ce917790-8655-41d1-bcda-b81a56eff495"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNode Member%3Doutput"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2e1f564e-a731-4e80-b503-b49aca28fc12"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34b599d4-42b4-46e8-b441-ab131f4b8236">
+                    <propertyInstance
+                      Id="2e66b1c2-127a-4765-9ee8-7a0e26f45e9a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="484f0c19-bcc5-4f73-a57d-28cb0d24bd9b">
+                    <propertyInstance
+                      Id="bf3b4dda-70ba-4eea-9f5d-6e4668f36a2e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f91839f-4f7d-48a2-ba65-ccf492d5ef10">
+                    <propertyInstance
+                      Id="e6246731-1b8f-499a-aca1-72d9f5da3c60"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd456c69-144d-440f-9bf7-21bf0463f085">
+                    <propertyInstance
+                      Id="93187a30-a3c7-4768-a589-fab75fcfce1d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ec7f279-dd25-40ff-8e47-b9e367383e1c">
+                    <propertyInstance
+                      Id="2f14b012-b79a-44dd-8408-6c94cda6a76d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="CalculemusModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a09030c8-9935-4b09-8af9-29ff78e35ec9"
+            name="Calculate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="20fdafe6-b3ff-48af-a68d-a6d5ccd62853"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNode Member%3DCalculate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ffd89f26-ba1b-4ba8-b911-8ba5aed0bf01"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fb52254-26dc-45ef-8164-9c331576721a">
+                    <propertyInstance
+                      Id="32fc8a12-c453-4997-9038-952ddd26aa55"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9454085b-0d3b-4ddc-ab8c-68dfc3f7a71f">
+                    <propertyInstance
+                      Id="9c54b71c-9417-4973-97c2-f647211aa959"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee630910-094c-4ffa-839c-93b55f6a1ac6">
+                    <propertyInstance
+                      Id="9af1de38-b359-4385-aa01-0057733dccb4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6daee7c-5c70-488b-a301-b32792c72f1f">
+                    <propertyInstance
+                      Id="ee460fd3-c074-4b8c-b22f-0b8c23c5e1ba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e676df8-d92e-427f-8497-b50ab09cc717">
+                    <propertyInstance
+                      Id="be843e25-91d3-485c-90b3-5a2b53974508"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cc731f5-132a-4904-9a90-2c76f2abcfee">
+                    <propertyInstance
+                      Id="c5906342-0724-4105-be1f-084053455e93"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="23127e78-64ca-421e-9f42-72ff9e31196c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b80d2ff0-8ec6-442b-9bed-9c21b8f9ad02"
+            name="Node"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="874eb97e-684a-4cee-a870-f67e9b18f68f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNode Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0d27d20b-6c0e-4126-8e70-bb92c7ae616f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e497024b-26b3-40f1-8b82-786e124ff99d">
+                    <propertyInstance
+                      Id="5c8c4255-b159-4707-8a90-746ecb82dd99"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77ab3f8a-3124-4fe0-9332-3b7750c781c5">
+                    <propertyInstance
+                      Id="d6a2c5c2-8c45-4242-be36-d2fb72331307"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86807243-a638-4c6f-ab65-15e0a6773c2e">
+                    <propertyInstance
+                      Id="38d32ca0-d307-4172-a368-7b2fd3df97a6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee642b0b-8643-4c9c-bb77-54da588d87b6">
+                    <propertyInstance
+                      Id="8a90b5ff-6d6c-49f2-87ff-ca082895c47f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1058ae31-6ba6-4356-b25b-017eabd8d2af">
+                    <propertyInstance
+                      Id="69fcd8eb-aab2-4285-b143-59dd73c06e20"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="246cec80-33cd-457e-a615-0494f9721d36">
+                    <propertyInstance
+                      Id="199b0bb4-1675-47f8-95d8-8d6b3525f707"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b93ecc52-7bdb-419f-844e-c183b1753c97"
+        name="NodeFactory"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9248d32d-084e-4a2d-973c-caa4714dd868"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNodeFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b353655b-7f76-4451-a75a-10975a6097e5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a20a8253-624f-44b1-8f82-afe84189e129">
+                <propertyInstance
+                  Id="e074f2ce-cb2f-4834-958f-7aec9b096221"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="19598194-abfe-4dee-9a66-bd2b61cdcbea">
+                <propertyInstance
+                  Id="ef94e2ec-f2b5-4412-b287-6031b17e8d53"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="68ee7cc0-2635-4104-bec9-e1ef34b026d6">
+                <propertyInstance
+                  Id="bd45dcdc-9178-420b-98af-772adf362e6b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e0ce418-3c84-4c59-ae35-a015909f6469">
+                <propertyInstance
+                  Id="5c663ce8-005b-40c3-b35f-f34e819eb51f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7aab705f-555b-4cfe-b059-ef02706a525e">
+                <propertyInstance
+                  Id="5818cd52-ef8c-4fc9-b279-9b743d006ea9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ae6e9264-d7c6-4f49-b8ff-9e86ef15493a"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="adad2abc-4e0f-41ee-b9c1-c4e6df73d0d4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNodeFactory Member%3D(Name%3DgetInstance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6d436a31-ccd5-4a49-96d5-14864ea7c0c1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52179c6e-8826-47f9-b79f-b70bbd9f25ff">
+                    <propertyInstance
+                      Id="ca5321ec-a56d-484e-a230-673eb0de6b3a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad38dd2d-b882-4b5e-8ae7-3072c014e9e5">
+                    <propertyInstance
+                      Id="52d5372b-e5ab-4b6c-b221-f1b7bf828afc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49c55216-1e5c-487e-a529-1a77d8955d09">
+                    <propertyInstance
+                      Id="06cbdca5-ec9e-4ca1-8730-7e5beab554b2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9c66a0a-4c7e-4f5f-9a5d-d7526636e8f2">
+                    <propertyInstance
+                      Id="84f23f87-4bb3-422c-96c7-a848ad5f4c09"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17cb27fd-af91-4bb3-ae9a-9872815a4efe">
+                    <propertyInstance
+                      Id="0ec187b9-8b45-42f1-8dc3-fdc8b2dc9471"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0892163-829f-4915-bba2-5c10ef1ec6b7">
+                    <propertyInstance
+                      Id="587a8750-954c-4dd6-8252-20dbe82d9150"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92462f05-62ed-4797-b23e-92f9da44033d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f1251cd2-83e4-4612-b854-ae035173dc8d"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package_2151.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="99b6a369-9857-4f07-ba70-85ec307deac5"
+                  name="node"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6df44c55-26ad-4479-8cc5-13f3897a0389"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNodeFactory Member%3D(Name%3DgetInstance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dnode"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="CalculemusModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0a1a5e0e-7545-4d26-a8e5-23299dfb81cc"
+            name="NodeFactory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0bc5734c-908b-44a9-94c0-69e41a82d8e2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FHersenspinsel%2FDocuments%2FGitHub%2FCalculemus%2FCalculemus%2Fbin%2FDebug%2FCalculemus.exe Namespace%3DCalculemus.Model Type%3DNodeFactory Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9a3c6e43-68e9-44d1-bf7d-b1fa7dfaf85d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8291d59-204a-47e0-b28e-4c95c957ef8e">
+                    <propertyInstance
+                      Id="050eac1b-7ce6-464e-8422-dc6fc2ca2c52"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed1ee742-5be9-4861-b594-8f3ba7c7cc92">
+                    <propertyInstance
+                      Id="18b55b73-fab4-4107-b1d8-66b8f5a12994"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b5db895-aad1-4c47-a2d5-21b79e67ef0f">
+                    <propertyInstance
+                      Id="6873e8d8-d83d-495e-af92-3d9bcd721373"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="508ff744-e0c0-4091-a5a2-5b678a5e3258">
+                    <propertyInstance
+                      Id="8c657969-133b-451a-9df5-bf8a2d4e179b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55395a2b-0ee6-4ee4-9491-791ba41862f5">
+                    <propertyInstance
+                      Id="117f551f-038f-4822-8b50-13577009c7fe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d23d0830-9c08-45b5-90f4-fe42ca5a8f17">
+                    <propertyInstance
+                      Id="ca62ba27-25ee-4a60-ac8a-40a28a87e979"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
