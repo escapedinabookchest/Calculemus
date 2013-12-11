@@ -15,26 +15,10 @@ namespace TestCalculemus.Model
         [TestMethod]
         public void TestGetInstance()
         {
-            Node input = NodeFactory.GetInstance("INPUT");
-            Assert.IsInstanceOfType(input, typeof(InputNode));
-
-            Node probe = NodeFactory.GetInstance("PROBE");
-            Assert.IsInstanceOfType(probe, typeof(ProbeNode));
-
-            Node and = NodeFactory.GetInstance("AND");
-            Assert.IsInstanceOfType(and, typeof(ComponentNode));
-
-            Node or = NodeFactory.GetInstance("OR");
-            Assert.IsInstanceOfType(or, typeof(ComponentNode));
-
-            Node nor = NodeFactory.GetInstance("NOR");
-            Assert.IsInstanceOfType(nor, typeof(ComponentNode));
-
-            Node nand = NodeFactory.GetInstance("NAND");
-            Assert.IsInstanceOfType(nand, typeof(ComponentNode));
-
-            Node xor = NodeFactory.GetInstance("XOR");
-            Assert.IsInstanceOfType(xor, typeof(ComponentNode));
+            Node node = Node.create("NOT");
+            node.Input = new bool[] { true };
+            node.Calculate();
+            Console.WriteLine(node.Output);
         }
     }
 }
