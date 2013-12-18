@@ -15,23 +15,28 @@ namespace TestCalculemus
         public void initialize()
         {
             parser = new Parser();
-            graph = new Graph();
+            graph = new Graph(new TopologicalSorting());
+            parser.Parse(@"C:\Users\Hersenspinsel\Documents\GitHub\Calculemus\Calculemus\circuit.txt");
+            graph.AddVertices(parser.Vertices);
+            graph.AddEdges(parser.Edges);
         }
 
         [TestMethod]
         public void TestAddVertices()
         {
-            parser.Parse(@"C:\Users\Hersenspinsel\Documents\GitHub\Calculemus\Calculemus\circuit.txt");
-            graph.AddVertices(parser.Vertices);
-            graph.AddEdges(parser.Edges);
-            
-            foreach (KeyValuePair<string, Node> vertex in graph.Vertices)
-            {
-                //Console.WriteLine(vertex.Key + ": " + vertex.Value);
-            }
+            graph.Sort();
 
-            graph.createAdjacencyList();
-            graph.topo();
+            foreach (string vertex in graph.SortedVertices)
+            {
+                Console.WriteLine(vertex);
+            }
+        }
+
+        [TestMethod]
+        public void TestCalculate()
+        {
+            graph.Sort();
+            graph.Calculate();
         }
     }
 }

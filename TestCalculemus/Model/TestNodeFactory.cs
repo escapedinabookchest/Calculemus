@@ -16,7 +16,7 @@ namespace TestCalculemus.Model
         public void TestGetInstance()
         {
             Node node = Node.create("NOT");
-            node.Input = new bool[] { true };
+            node.AddInput(true);
             node.Calculate();
             Console.WriteLine(node.Output);
         }

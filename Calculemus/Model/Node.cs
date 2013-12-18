@@ -1,19 +1,24 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 namespace Calculemus.Model
 {
-    internal abstract class Node : ICloneable, IGetKey<String>
+    public abstract class Node : ICloneable, IGetKey<String>
     {
-        private bool[] input;
+        private List<bool> input;
         private bool output;
 
-        protected Node() { }
+        protected Node() 
+        {
+            input = new List<bool>();
+        }
 
         public static Node create(string node)
         {
             return NodeFactory<string, Node>.create(node);
         }
 
-        public bool[] Input
+        public List<bool> Input
         {
             get { return this.input; }
             set { this.input = value; }
@@ -25,6 +30,14 @@ namespace Calculemus.Model
             protected set { this.output = value; }
         }
 
+        public void AddInput(params bool[] input)
+        {
+            foreach (bool b in input)
+            {
+                Input.Add(b);
+            }
+        }
+
         public abstract string getKey();
         public abstract object Clone();
         public abstract bool Calculate();
@@ -34,7 +47,7 @@ namespace Calculemus.Model
     {
         public override bool Calculate()
         {
-            return Output = Input[0];
+            return Output = false; //Input[0];
         }
 
         public override string getKey()
@@ -52,7 +65,7 @@ namespace Calculemus.Model
     {
         public override bool Calculate()
         {
-            return Output = Input[0];
+            return Output = true; //Input[0];
         }
 
         public override string getKey()
@@ -70,10 +83,9 @@ namespace Calculemus.Model
     {
         public override bool Calculate()
         {
-            if (Input.Length != 1)
-                throw new ArgumentOutOfRangeException();
+            bool[] input = Input.ToArray();
 
-            return Output = Input[0];
+            return Output = input[0];
         }
 
         public override string getKey()
@@ -101,10 +113,15 @@ namespace Calculemus.Model
 
         public override bool Calculate()
         {
-            if (Input[0])
+            bool[] input = Input.ToArray();
+
+            if (input[0])
+            {
+                
                 return Output = false;
-            else
-                return Output = true;
+            }
+
+            return Output = true;
         }
     }
 
@@ -122,7 +139,9 @@ namespace Calculemus.Model
 
         public override bool Calculate()
         {
-            if (Input[0] && Input[1])
+            bool[] input = Input.ToArray();
+
+            if (input[0] && input[1])
                 return Output = true;
 
             return Output = false;
@@ -143,7 +162,9 @@ namespace Calculemus.Model
 
         public override bool Calculate()
         {
-            if (Input[0] || Input[1])
+            bool[] input = Input.ToArray();
+
+            if (input[0] || input[1])
                 return Output = true;
 
             return Output = false;
@@ -164,7 +185,9 @@ namespace Calculemus.Model
 
         public override bool Calculate()
         {
-            if (!(Input[0] || Input[1]))
+            bool[] input = Input.ToArray();
+
+            if (!(input[0] || input[1]))
                 return Output = true;
 
             return Output = false;
@@ -185,7 +208,9 @@ namespace Calculemus.Model
 
         public override bool Calculate()
         {
-            if (!(Input[0] && Input[1]))
+            bool[] input = Input.ToArray();
+
+            if (!(input[0] && input[1]))
                 return Output = true;
 
             return Output = false;
@@ -206,7 +231,9 @@ namespace Calculemus.Model
 
         public override bool Calculate()
         {
-            if ((Input[0] || Input[1]) && !(Input[0] && Input[1]))
+            bool[] input = Input.ToArray();
+
+            if ((input[0] || input[1]) && !(input[0] && input[1]))
                 return Output = true;
 
             return Output = false;

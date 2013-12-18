@@ -63,9 +63,11 @@
     <Compile Include="Model\IComponentLogic.cs" />
     <Compile Include="Model\IGraph.cs" />
     <Compile Include="Model\IParser.cs" />
+    <Compile Include="Model\ISortingAlgorithm.cs" />
     <Compile Include="Model\Node.cs" />
     <Compile Include="Model\NodeFactory.cs" />
     <Compile Include="Model\Parser.cs" />
+    <Compile Include="Model\TopologicalSorting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

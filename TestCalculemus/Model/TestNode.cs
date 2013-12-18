@@ -12,10 +12,11 @@ namespace TestCalculemus
         {
             Node node = new Not();
 
-            node.Input = new bool[1] { false };
+            node.AddInput(false);
             Assert.IsTrue(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[1] { true };
+            node.AddInput(true);
             Assert.IsFalse(node.Calculate());
         }
 
@@ -24,16 +25,19 @@ namespace TestCalculemus
         {
             Node node = new And();
 
-            node.Input = new bool[2] { false, false };
+            node.AddInput(false, false);
             Assert.IsFalse(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { false, true };
+            node.AddInput(false, true);
             Assert.IsFalse(node.Calculate());
+            node.Input.Clear();
             
-            node.Input = new bool[2] { true, false };
+            node.AddInput(true, false);
             Assert.IsFalse(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { true, true };
+            node.AddInput(true, true);
             Assert.IsTrue(node.Calculate());
         }
 
@@ -42,16 +46,19 @@ namespace TestCalculemus
         {
             Node node = new Or();
 
-            node.Input = new bool[2] { false, false };
+            node.AddInput(false, false);
             Assert.IsFalse(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { false, true };
+            node.AddInput(false, true);
             Assert.IsTrue(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { true, false };
+            node.AddInput(true, false);
             Assert.IsTrue(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { true, true };
+            node.AddInput(true, true);
             Assert.IsTrue(node.Calculate());
         }
 
@@ -60,16 +67,19 @@ namespace TestCalculemus
         {
             Node node = new Nor();
 
-            node.Input = new bool[2] { false, false };
+            node.AddInput(false, false);
             Assert.IsTrue(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { false, true };
+            node.AddInput(false, true);
             Assert.IsFalse(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { true, false };
+            node.AddInput(true, false);
             Assert.IsFalse(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { true, true };
+            node.AddInput(true, true);
             Assert.IsFalse(node.Calculate());
         }
 
@@ -78,16 +88,19 @@ namespace TestCalculemus
         {
             Node node = new Nand();
 
-            node.Input = new bool[2] { false, false };
+            node.AddInput(false, false);
             Assert.IsTrue(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { false, true };
+            node.AddInput(false, true);
             Assert.IsTrue(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { true, false };
+            node.AddInput(true, false);
             Assert.IsTrue(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { true, true };
+            node.AddInput(true, true);
             Assert.IsFalse(node.Calculate());
         }
         
@@ -96,16 +109,19 @@ namespace TestCalculemus
         {
             Node node = new Xor();
 
-            node.Input = new bool[2] { false, false };
+            node.AddInput(false, false);
             Assert.IsFalse(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { false, true };
+            node.AddInput(false, true);
             Assert.IsTrue(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { true, false };
+            node.AddInput(true, false);
             Assert.IsTrue(node.Calculate());
+            node.Input.Clear();
 
-            node.Input = new bool[2] { true, true };
+            node.AddInput(true, true);
             Assert.IsFalse(node.Calculate());
         }
     }
