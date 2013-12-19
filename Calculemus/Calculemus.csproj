@@ -59,9 +59,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\CalculemusController.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CalculemusModel.cs" />
     <Compile Include="Model\Graph.cs" />
     <Compile Include="Model\IComponentLogic.cs" />
-    <Compile Include="Model\IGraph.cs" />
+    <Compile Include="Model\IDatastructure.cs" />
     <Compile Include="Model\IParser.cs" />
     <Compile Include="Model\ISortingAlgorithm.cs" />
     <Compile Include="Model\Node.cs" />
@@ -98,6 +103,12 @@
     <Resource Include="circuit.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

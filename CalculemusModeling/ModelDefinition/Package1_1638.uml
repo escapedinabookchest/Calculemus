@@ -4027,5 +4027,11 @@
         LastKnownName="Model"
         LastKnownLocation="Package_2151.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ee3eb03c-086f-41e5-8462-0ac61ddee472"
+        LastKnownName="Controller"
+        LastKnownLocation="Package_2327.uml" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

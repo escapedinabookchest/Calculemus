@@ -8,6 +8,8 @@ namespace Calculemus.Model
 {
     public interface ISortingAlgorithm
     {
-        string[] Sort(IGraph graph);
+        string this[int i] { get; }
+        void Sort(IGraph graph);
+        IEnumerator<string> GetEnumerator();
     }
 }

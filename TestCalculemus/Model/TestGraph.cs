@@ -22,17 +22,6 @@ namespace TestCalculemus
         }
 
         [TestMethod]
-        public void TestAddVertices()
-        {
-            graph.Sort();
-
-            foreach (string vertex in graph.SortedVertices)
-            {
-                Console.WriteLine(vertex);
-            }
-        }
-
-        [TestMethod]
         public void TestCalculate()
         {
             graph.Sort();

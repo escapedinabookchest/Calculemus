@@ -6,36 +6,64 @@ using System.Threading.Tasks;
 
 namespace Calculemus.Model
 {
+    /**
+     * 
+     */
     internal class Graph : IGraph
     {
         private ISortingAlgorithm algorithm;
         private Dictionary<string, Node> vertices;
         private Dictionary<string, LinkedList<string>> edges;
-        private string[] sortedVertices;
+        private Dictionary<string, bool> result;
 
-        public Graph(ISortingAlgorithm algorithm)
+        public Graph(ISortingAlgorithm algorithm) // Strategy pattern
         {
             this.algorithm = algorithm;
             vertices = new Dictionary<string, Node>();
             edges = new Dictionary<string, LinkedList<string>>();
-            sortedVertices = null;
+            result = new Dictionary<string, bool>();
+        }
+
+        public Dictionary<string, Node> Vertices
+        {
+            get { return vertices; }
+            set { vertices = value; }
+        }
+
+        public Dictionary<string, LinkedList<string>> Edges
+        {
+            get { return edges; }
+            set { edges = value; }
+        }
+
+        public Dictionary<string, bool> Result
+        {
+            get { return result; }
+            set { result = value; }
+        }
+
+        public void Sort()
+        {
+            algorithm.Sort(this);
         }
 
         public void Calculate()
         {
-            foreach (string vertex in SortedVertices)
+            foreach (string vertex in algorithm)
             {
                 Node current = Vertices.ContainsKey(vertex) ? Vertices[vertex] : null;
                 LinkedList<string> edges = Edges.ContainsKey(vertex) ? Edges[vertex] : null;
 
+                current.Calculate();
+
                 if (current is ProbeNode)
                 {
+                    Console.WriteLine(vertex + ": " + current.Output);
+                    result.Add(vertex, current.Output);
                     continue;
                 }
 
-                current.Calculate();
-                
-                Console.Write(vertex + ": ");
+                Console.Write(vertex + " (" + current.Output + "): ");
                 foreach (string edge in edges)
                 {
                     Console.Write(edge + " ");
@@ -44,29 +72,6 @@ namespace Calculemus.Model
 
                 Console.WriteLine();
             }
-        }
-
-        public Dictionary<string, Node> Vertices
-        {
-            get { return this.vertices; }
-            set { this.vertices = value; }
-        }
-
-        public Dictionary<string, LinkedList<string>> Edges
-        {
-            get { return this.edges; }
-            set { this.edges = value; }
-        }
-
-        public string[] SortedVertices
-        {
-            get { return sortedVertices; }
-            set { sortedVertices = value; }
-        }
-
-        public void Sort()
-        {
-            sortedVertices = algorithm.Sort(this);
         }
 
         public void AddVertices(Dictionary<string, string> input)
